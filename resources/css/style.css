@@ -1,9 +1,7 @@
-div {
-  border: 1px solid black;
-}
-
 body {
   width: 100%;
+  font-family: Georgia;
+  font-size: 17px;
 }
 
 /* Header section */
@@ -11,9 +9,12 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  background-color: white;
   width: 100%;
   border-bottom: 1px solid black;
   position: fixed;
+  z-index: 100;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,8 +69,93 @@ nav a {
 
 .column.small {
   width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
-.short {
-  line-height: 0px;
+.image {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.image.banner {
+  font-size: 40px;
+  background-image: url("../images/story-main.png");
+  text-align: left;
+}
+
+.image.first {
+  background-image: url("../images/story-1.png");
+}
+
+.image.secound {
+  background-image: url("../images/story-2.png");
+}
+
+.image.third {
+  background-image: url("../images/story-3.png");
+}
+
+.s-container {
+  width: 630px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s-column {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column.small h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.column.small span {
+  font-family: Verdana;
+  font-size: 12px;
+  line-height: 50px;
+  color: DimGray;
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  background-color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 12px;
+  position: relative;
+  height: 250px;
+  top: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 0 20px;
+  border-right: 2px solid white;
+  display: inline;
+}
+
+footer nav {
+  padding: 0 10px;
+  display: inline;
 }
